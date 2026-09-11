@@ -1,0 +1,31 @@
+{
+  "name": "sharebondhu-backend",
+  "version": "0.8.0",
+  "private": true,
+  "type": "module",
+  "description": "ShareBondhu PostgreSQL-backed, server-authoritative ShareCoin foundation",
+  "engines": { "node": ">=20.20.0" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsx --test --test-concurrency=1 test/*.test.ts",
+    "dev": "tsx --env-file=.env src/server.ts",
+    "start": "node --env-file=.env build/server.js",
+    "db:migrate": "tsx --env-file=.env src/db/migrate.ts",
+    "setup:dev": "tsx src/cli/development.ts init-env",
+    "dev:user": "tsx --env-file=.env src/cli/development.ts user",
+    "dev:seed": "tsx --env-file=.env src/cli/development.ts seed"
+  },
+  "dependencies": {
+    "fastify": "5.12.3",
+    "jose": "6.2.12",
+    "pg": "8.23.0",
+    "zod": "4.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.2",
+    "@types/pg": "8.23.1",
+    "tsx": "4.23.13",
+    "typescript": "5.9.3"
+  }
+}

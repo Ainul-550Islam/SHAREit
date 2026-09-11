@@ -1,0 +1,42 @@
+ShareBondhu Part 1 — verification report
+Date: 2026-09-06
+Environment: Linux; Flutter 3.47.2 stable; Dart 3.13.2
+Native Android/iOS build: not performed
+Physical device and native OS picker: not tested
+Automated picker: injected fixture results, not a native picker invocation
+
+STATIC ANALYSIS
+Analyzing sharebondhu...                                        
+No issues found! (ran in 8.4s)
+
+AUTOMATED TESTS — 8 model + 20 widget tests
+00:00 +0: loading /home/user/sharebondhu/test/widget_test.dart
+00:00 +0: File model formats bytes with binary units
+00:00 +1: File model rejects negative byte counts
+00:00 +2: File model classifies file extensions without case sensitivity
+00:00 +3: File model handles dotfiles and names without extensions
+00:00 +4: File model keeps source identity separate from the display name
+00:00 +5: File model does not read file content until a stream is requested
+00:00 +6: File model validates filenames and URI schemes
+00:00 +7: File model freezes selection results and validates unavailable counts
+00:00 +8: Part 1 user interface starts with the brand and an empty selection
+00:01 +9: Part 1 user interface selects several files and calculates the total
+00:01 +10: Part 1 user interface skips duplicate source references in one selection
+00:01 +11: Part 1 user interface skips duplicate source references across picker calls
+00:01 +12: Part 1 user interface keeps files that share a name but have different sources
+00:01 +13: Part 1 user interface preserves the selection when the picker is canceled
+00:01 +14: Part 1 user interface removes a reference without reading its original file
+00:02 +15: Part 1 user interface asks before clearing and respects both dialog choices
+00:02 +16: Part 1 user interface shows unavailable-file feedback without losing valid files
+00:02 +17: Part 1 user interface reports an entirely unavailable selection
+00:02 +18: Part 1 user interface shows access errors and permits a successful retry
+00:02 +19: Part 1 user interface reports missing native plugins with rebuild instructions
+00:02 +20: Part 1 user interface handles an unexpected picker error without crashing
+00:03 +21: Part 1 user interface prevents repeated picker calls while selection is pending
+00:03 +22: Part 1 user interface changes themes without losing the current selection
+00:03 +23: Part 1 user interface keeps the selection when switching navigation tabs
+00:03 +24: Part 1 user interface handles large metadata without reading the file into memory
+00:03 +25: Part 1 user interface renders narrow screens without layout errors
+00:03 +26: Part 1 user interface supports large system text on a narrow screen
+00:03 +27: Part 1 user interface ignores late picker results after the screen is disposed
+00:04 +28: All tests passed!

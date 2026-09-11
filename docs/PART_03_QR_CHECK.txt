@@ -1,0 +1,4 @@
+Software QR round-trip check: actual Flutter QrImageView output, zxing-cpp decoder.
+Demo invitations only; not live receiver credentials.
+Payload one: exact 98-character SB1 match.
+Payload two: exact 98-character SB1 match.

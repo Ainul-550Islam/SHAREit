@@ -1,0 +1,931 @@
+{
+  "archive": "ShareBondhu_Part_06.zip",
+  "sha256": "6c4e23ca7f3a15b4f659b2b2105b27e3d9a38506dc09428568a1931eec8bc67c",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 746,
+      "sha256": "441eaa1de5b3db9fae056e7503567e9f8dd94173e1389c60f76956abf729015a"
+    },
+    {
+      "path": ".metadata",
+      "bytes": 1114,
+      "sha256": "111ca88662a144dcb64aa36b56afadc1c75722d7f71bcf1ef8c9129f56ecd831"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10554,
+      "sha256": "3eb30c39efeaecccde5fba5dee230894e14fea7f9a1ff82611501cd0da2f62aa"
+    },
+    {
+      "path": "analysis_options.yaml",
+      "bytes": 111,
+      "sha256": "872d8b3d2403144614257402ab556348adcd20532e8f57709d29d94dad0e3ea9"
+    },
+    {
+      "path": "android/.gitignore",
+      "bytes": 253,
+      "sha256": "b027c9de1011765c015e5819bf857c0d75bfcd0886fb01721c091159012e50f1"
+    },
+    {
+      "path": "android/app/build.gradle.kts",
+      "bytes": 1780,
+      "sha256": "e75a5970c82c203db72b49536295a3e46b95649855dd2e617b7519f78b72c448"
+    },
+    {
+      "path": "android/app/src/debug/AndroidManifest.xml",
+      "bytes": 378,
+      "sha256": "30b0832ed8b92dfbd6ae2abfa939ccf26333d37600056b1572bd4a397a18a74b"
+    },
+    {
+      "path": "android/app/src/main/AndroidManifest.xml",
+      "bytes": 2511,
+      "sha256": "8884f0570c4e8c6c81a4bbea2ab52cb91cd3f827e6b6e3324e5308a1f3288ce7"
+    },
+    {
+      "path": "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "bytes": 1999,
+      "sha256": "9a6c008e1e8f97c61b28a7615e99047f036344d7a27c6c5dd040b2898b003d0b"
+    },
+    {
+      "path": "android/app/src/main/kotlin/com/sharebondhu/sharebondhu/MainActivity.kt",
+      "bytes": 129,
+      "sha256": "ce638251a0e2cd2f07b0d9b5d0db53e981b667e4d5175b4f94cd0bb2f90c3eb6"
+    },
+    {
+      "path": "android/app/src/main/res/drawable-v21/launch_background.xml",
+      "bytes": 438,
+      "sha256": "7ca6d5cec2169c5a98661a119db23a6f3399c8fef2256ff04f3a642831282478"
+    },
+    {
+      "path": "android/app/src/main/res/drawable/launch_background.xml",
+      "bytes": 434,
+      "sha256": "94433756fe10005ddd6fc55cc5c0b1e9f3c10b66a08ceac795ece6713d34e28a"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "bytes": 544,
+      "sha256": "6a7c8f0d703e3682108f9662f813302236240d3f8f638bb391e32bfb96055fef"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "bytes": 442,
+      "sha256": "c7c0c0189145e4e32a401c61c9bdc615754b0264e7afae24e834bb81049eaf81"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "bytes": 721,
+      "sha256": "e14aa40904929bf313fded22cf7e7ffcbf1d1aac4263b5ef1be8bfce650397aa"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "bytes": 1031,
+      "sha256": "4d470bf22d5c17d84edc5f82516d1ba8a1c09559cd761cefb792f86d9f52b540"
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "bytes": 1443,
+      "sha256": "3c34e1f298d0c9ea3455d46db6b7759c8211a49e9ec6e44b635fc5c87dfb4180"
+    },
+    {
+      "path": "android/app/src/main/res/values-night/styles.xml",
+      "bytes": 995,
+      "sha256": "8c5bad5152f217e837519f9c15211d19f39bd45f5f67faf6dd81cb4b299e518f"
+    },
+    {
+      "path": "android/app/src/main/res/values/styles.xml",
+      "bytes": 996,
+      "sha256": "937d7c82f539c72eb94fd3a3773f29b3d3fef1997213c92cb632298cedf4bda9"
+    },
+    {
+      "path": "android/app/src/profile/AndroidManifest.xml",
+      "bytes": 378,
+      "sha256": "30b0832ed8b92dfbd6ae2abfa939ccf26333d37600056b1572bd4a397a18a74b"
+    },
+    {
+      "path": "android/build.gradle.kts",
+      "bytes": 537,
+      "sha256": "6a26dba2cb8dfba1e74f540b0d17a89d96c1301d3c3bfda14348bed257fddcba"
+    },
+    {
+      "path": "android/gradle.properties",
+      "bytes": 300,
+      "sha256": "0f82b18017fba6bb5ce3aa4b2d1a00c9382fc8aae7b1d9326e44b18abd66d80b"
+    },
+    {
+      "path": "android/gradle/wrapper/gradle-wrapper.jar",
+      "bytes": 53636,
+      "sha256": "16caeaf66d57a0d1d2087fef6a97efa62de8da69afa5b908f40db35afc4342da"
+    },
+    {
+      "path": "android/gradle/wrapper/gradle-wrapper.properties",
+      "bytes": 202,
+      "sha256": "b690d26223576fe4e63889fad9a00df81945cb870b9476cc5a563152a1a88a74"
+    },
+    {
+      "path": "android/gradlew",
+      "bytes": 4971,
+      "sha256": "ec56c02543666d92d9ac5ae7fcc48f88ce4de0deb8b7f9b39928ca46f68c1b2b"
+    },
+    {
+      "path": "android/gradlew.bat",
+      "bytes": 2404,
+      "sha256": "c13c6e91b9a517783976de213d46398c661ea9e17651376d7301e839eaedcc62"
+    },
+    {
+      "path": "android/settings.gradle.kts",
+      "bytes": 770,
+      "sha256": "016759283e88ade6eba92910583feeef88b962839b957aa414296afd2952d122"
+    },
+    {
+      "path": "docs/FILE_INDEX.md",
+      "bytes": 8944,
+      "sha256": "6dd75bd00c37f692ed3eedec4a5a441233c4362594ffb36a18fa1a29cb502bcd"
+    },
+    {
+      "path": "docs/FILE_INVENTORY.txt",
+      "bytes": 5721,
+      "sha256": "43d11db94f4b23d6d75872de3bf87f916ea2274e568a76047e5968ff6c5231c0"
+    },
+    {
+      "path": "docs/PART_01_FILE_INVENTORY.txt",
+      "bytes": 3941,
+      "sha256": "f79467e46b02325e9df522c1083811c4b01ed674d415793461c740f127c916ec"
+    },
+    {
+      "path": "docs/PART_01_FULL_CODE.md",
+      "bytes": 69892,
+      "sha256": "ae8fd57ce0d7673fc11571ae9575e7869a2a5e91e213e01a6e1f63a7336e5664"
+    },
+    {
+      "path": "docs/PART_01_SHA256SUMS.txt",
+      "bytes": 8899,
+      "sha256": "e8fe8d2cd6fe5a64943eb47c62bb97f361811c0a29b4f5d7df016bbff61d47e7"
+    },
+    {
+      "path": "docs/PART_01_TEST_RESULTS.txt",
+      "bytes": 2763,
+      "sha256": "dec41f0bdab69f88eb67b4c6d5f9c928239748b57a517e7f3a43fef895be7f3a"
+    },
+    {
+      "path": "docs/PART_02_FILE_INVENTORY.txt",
+      "bytes": 4258,
+      "sha256": "c817b268f0b24f465d4d9b114f1cb8acbb42f43c94d60c43cf19b4b2314cb16f"
+    },
+    {
+      "path": "docs/PART_02_FULL_CODE.md",
+      "bytes": 199201,
+      "sha256": "8d0a5bb7d78bc2f52123f1e228cbb298b0a89ea768dd2ec51226f0e9b33e52bf"
+    },
+    {
+      "path": "docs/PART_02_SHA256SUMS.txt",
+      "bytes": 9853,
+      "sha256": "4f656c1943ff1aa8f2a58232f60e842d80db36e38ce44de139bd5797e0930045"
+    },
+    {
+      "path": "docs/PART_02_TEST_RESULTS.txt",
+      "bytes": 6247,
+      "sha256": "7654021d0148721c362c193e6cb726ee0dc7a292a735c8305e79c0844f0c08e9"
+    },
+    {
+      "path": "docs/PART_03_DESIGN_NOTES.md",
+      "bytes": 6745,
+      "sha256": "1d8bba835363f9ffc1ebecbff055339c76cb7f9ca68c1737fe95b4a83d17fe5b"
+    },
+    {
+      "path": "docs/PART_03_FILE_INVENTORY.txt",
+      "bytes": 4606,
+      "sha256": "b1e0b960d1b7fc2d7c12180f24ae2c524eea1d4bab1547cdb8f564761d1b4a71"
+    },
+    {
+      "path": "docs/PART_03_FULL_CODE.md",
+      "bytes": 317372,
+      "sha256": "d048d7278f47698ad859db819bf7ed78e0a13f03875ace18d7d6da409f527917"
+    },
+    {
+      "path": "docs/PART_03_QR_CHECK.txt",
+      "bytes": 224,
+      "sha256": "eb79cca4c6d295e1d8fde9a070526057668b755ca4929a2209958215bd5603ef"
+    },
+    {
+      "path": "docs/PART_03_SHA256SUMS.txt",
+      "bytes": 11016,
+      "sha256": "cc612ed5ea24cc1b730ec8167b7ecb0a3d6d5846330f78125bc941fe2d577e07"
+    },
+    {
+      "path": "docs/PART_03_TEST_RESULTS.txt",
+      "bytes": 10264,
+      "sha256": "bea9ba1a509d248f16cd03345c0113b7bd66e41f532a75a5f32a6665a317e65a"
+    },
+    {
+      "path": "docs/PART_04_DELIVERY_NOTES.md",
+      "bytes": 6655,
+      "sha256": "28624feb68aac3a37d7bea5480e867fc70dcf6f057f4f66a3ed0e382d842fe1b"
+    },
+    {
+      "path": "docs/PART_04_FILE_INVENTORY.txt",
+      "bytes": 4928,
+      "sha256": "bd82bf215375444964490006b5a9f5aec1efa5a90c4e7f76c9c280190fa48750"
+    },
+    {
+      "path": "docs/PART_04_FULL_CODE.md",
+      "bytes": 177124,
+      "sha256": "dcc84ad5e20ef84ceee701615363bad8da4056841be1210a932a890c01330b60"
+    },
+    {
+      "path": "docs/PART_04_SHA256SUMS.txt",
+      "bytes": 12017,
+      "sha256": "69cb98e7bd129d5f775ed0c1883b945f6caf3abd6b08d0ac19b2b417b2f58627"
+    },
+    {
+      "path": "docs/PART_04_TEST_RESULTS.txt",
+      "bytes": 21586,
+      "sha256": "a60bd11672b9b02bf01c145d89b6000b14037d4407fea27327fc12d4e4a1bc36"
+    },
+    {
+      "path": "docs/PART_05A_FILES_21-23.md",
+      "bytes": 85101,
+      "sha256": "c55db68beba94655b0d480c52903e6d05ad05476eaf0f017e916c295d2a1d24d"
+    },
+    {
+      "path": "docs/PART_05B_FILES_24-25_INTEGRATION.md",
+      "bytes": 176159,
+      "sha256": "54ab814f6b14affe6696a6d07ac1ad309485dd729e941b9ee6b3a1583a01323d"
+    },
+    {
+      "path": "docs/PART_05_BACKEND_CONTRACT.md",
+      "bytes": 10929,
+      "sha256": "f97639e53be33a9e61a4bb39054aab3e8cb39f917a61913064900a2c81a686ff"
+    },
+    {
+      "path": "docs/PART_05_BASELINE_AUDIT.json",
+      "bytes": 29478,
+      "sha256": "60144e89e65675bd53cd70270c20df0b14efbfbf41f961fe5dc4c8b039fa9ca8"
+    },
+    {
+      "path": "docs/PART_05_FILE_INVENTORY.txt",
+      "bytes": 5334,
+      "sha256": "d39b045efe16fb269aa4ee1ab6c39d8959500bba11b5207f5a9fc9694c6380ea"
+    },
+    {
+      "path": "docs/PART_05_FULL_CODE.md",
+      "bytes": 261344,
+      "sha256": "a7fef59b5323fa542220409fa3afad08b932e2e5df224774a3e0b11f34a44942"
+    },
+    {
+      "path": "docs/PART_05_SHA256SUMS.txt",
+      "bytes": 13395,
+      "sha256": "9520cf64d3bc6f2ee086a6597c068f84de71f894812927f0d31929377dde35db"
+    },
+    {
+      "path": "docs/PART_05_TEST_RESULTS.txt",
+      "bytes": 31467,
+      "sha256": "e4260cff9c798c667d2a758f7100a835e2356ff4cb910185077078d3182d57f9"
+    },
+    {
+      "path": "docs/PART_06A_FILES_26-27.md",
+      "bytes": 40075,
+      "sha256": "9eb6a79b3d240cc6d5fc2e583427d3ef84a728279db71591da385381a1d879ff"
+    },
+    {
+      "path": "docs/PART_06B_FILES_28-30_INTEGRATION.md",
+      "bytes": 248290,
+      "sha256": "6a47fa67e3ddbfbf1b776b7a149c8ad0e17e0c0c74db8b76a1ada6940cae8449"
+    },
+    {
+      "path": "docs/PART_06_BACKEND_CONTRACT.md",
+      "bytes": 9604,
+      "sha256": "15adc0602a97120b4d2727f999c36b763a37778a520ea5339166e886fb8d56a6"
+    },
+    {
+      "path": "docs/PART_06_FULL_CODE.md",
+      "bytes": 288461,
+      "sha256": "90417f3d1ed11db265108a3de62d0bebf13094a65380d70983d8c74b1d0634fc"
+    },
+    {
+      "path": "docs/PART_06_TEST_RESULTS.txt",
+      "bytes": 40245,
+      "sha256": "65d5e5e8f425549c08bfb93ab6991dc13882e29b7cf6cfc616686ecde7f24c79"
+    },
+    {
+      "path": "docs/PROTOCOL_V1.md",
+      "bytes": 9585,
+      "sha256": "135f93b186e1ccbff256b5ad4f26f488791b6c132e85c97ab51d4ade4c8b3765"
+    },
+    {
+      "path": "docs/SHA256SUMS.txt",
+      "bytes": 14670,
+      "sha256": "3ab9d037e7530aaddedc9643938325e3d6b91d90660f8a1c589ca18176a668f2"
+    },
+    {
+      "path": "docs/TEST_RESULTS.txt",
+      "bytes": 40245,
+      "sha256": "65d5e5e8f425549c08bfb93ab6991dc13882e29b7cf6cfc616686ecde7f24c79"
+    },
+    {
+      "path": "docs/part01-preview.png",
+      "bytes": 190956,
+      "sha256": "b620b957b32b90b64b5b08d68157d68841084102af0f61bed11b701d93b9725e"
+    },
+    {
+      "path": "docs/part02-preview.png",
+      "bytes": 229484,
+      "sha256": "c25be2812b73c062e5ccc7abc8be7dff1a9de56036f82cbb6e3251b20fd7de18"
+    },
+    {
+      "path": "docs/part03-preview.png",
+      "bytes": 161814,
+      "sha256": "ce7252367a1b87dd5f6ea3b2708d1e66bf4663b580a10b2d3111923d71d44772"
+    },
+    {
+      "path": "docs/part05-preview.png",
+      "bytes": 278740,
+      "sha256": "abe1ca2223695fccad6a077f09e9e47bd5ad2b70cdd2bdd0204890c58599329e"
+    },
+    {
+      "path": "docs/part06-preview.png",
+      "bytes": 173082,
+      "sha256": "aec9b3931d76184958b5aa70a0678f971ab46071167aa2c72f76351cee47376f"
+    },
+    {
+      "path": "ios/.gitignore",
+      "bytes": 569,
+      "sha256": "37380775aeb2499662b7aca80f4ac4c95ae827c3ba2bfa179aa3e9af4812c623"
+    },
+    {
+      "path": "ios/Flutter/AppFrameworkInfo.plist",
+      "bytes": 720,
+      "sha256": "da12038f9b2688a8a26160fea2609fa8fcb11421448c109f09c0f573efe7698d"
+    },
+    {
+      "path": "ios/Flutter/Debug.xcconfig",
+      "bytes": 30,
+      "sha256": "a82d7765b37116ee4821d2cd1d65942febf8032353757ffb0826eabde785b4a6"
+    },
+    {
+      "path": "ios/Flutter/Release.xcconfig",
+      "bytes": 30,
+      "sha256": "a82d7765b37116ee4821d2cd1d65942febf8032353757ffb0826eabde785b4a6"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.pbxproj",
+      "bytes": 25779,
+      "sha256": "ed4d28c867801b4f6787d834bb2f557b737e76c417e268894fdec98dfc380662"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+      "bytes": 135,
+      "sha256": "7f3b00b5c3fdb45242d7b87e1e5c4e25d1fa8129a16c94295ecc4e8ea2235c5f"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "bytes": 238,
+      "sha256": "dfa0f9bb85b95ccba9c6811adadf8cb407fb5d52088e89db83ebc308ec448542"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings",
+      "bytes": 226,
+      "sha256": "11b247bc6796892d67c9a821d18604db4dd6a880981b34f38460b9866e6b247f"
+    },
+    {
+      "path": "ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme",
+      "bytes": 4717,
+      "sha256": "9fbce429f56243561dd437a527136c9f9ed77165e3b271b923faf236cfcd0484"
+    },
+    {
+      "path": "ios/Runner.xcworkspace/contents.xcworkspacedata",
+      "bytes": 152,
+      "sha256": "46c3c9702ff7c5584e11c954d943cfb6e07fb26e3fbd072ddbc0f388aa352de1"
+    },
+    {
+      "path": "ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "bytes": 238,
+      "sha256": "dfa0f9bb85b95ccba9c6811adadf8cb407fb5d52088e89db83ebc308ec448542"
+    },
+    {
+      "path": "ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings",
+      "bytes": 226,
+      "sha256": "11b247bc6796892d67c9a821d18604db4dd6a880981b34f38460b9866e6b247f"
+    },
+    {
+      "path": "ios/Runner/AppDelegate.swift",
+      "bytes": 539,
+      "sha256": "451c6d9ba0a2b3ff43092ea349c60fa79a91f1158b915eb29dbdd357cb95d7b8"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "bytes": 2519,
+      "sha256": "3b1e214f466ffedff74baa5598ad5c4421130eea6bc8d57b8fe23435e8280ae4"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "bytes": 10932,
+      "sha256": "7770183009e914112de7d8ef1d235a6a30c5834424858e0d2f8253f6b8d31926"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png",
+      "bytes": 295,
+      "sha256": "cab10a0d391ec5bc09ef50ce49e8ad401cee7ef03707ec0923a222c5c2b3d212"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png",
+      "bytes": 406,
+      "sha256": "b9ad02cf6576a04d1b6806ac02a2431481b448dd0c2e505ce25842d1f7c4730b"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png",
+      "bytes": 450,
+      "sha256": "c6e6d3b215ae744a9c391f4c4d44157eff5e739d6ad6c39f9bfa5df66dddd267"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png",
+      "bytes": 282,
+      "sha256": "5dee24dc104ac76dc162e42ae0beb163d426bf365562ee28ba7b3ad368559a60"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png",
+      "bytes": 462,
+      "sha256": "a9b21eb6f4271385655a8771f76e29eef8c1107d7879cbcfc567e6619d1f716a"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png",
+      "bytes": 704,
+      "sha256": "e677d701ffe4af7bc2935098d6b3984cc9ab7ace573e6900955a5535b12410cf"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png",
+      "bytes": 406,
+      "sha256": "b9ad02cf6576a04d1b6806ac02a2431481b448dd0c2e505ce25842d1f7c4730b"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png",
+      "bytes": 586,
+      "sha256": "7c61c42fc7b657d9cf314d32a4ec458f0647c3aaf360be1b9377857266ec2499"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png",
+      "bytes": 862,
+      "sha256": "19be171481dc71a0b2803ebcd01dd8b0c5fd5778dee34c0a3cabc948c225f24e"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png",
+      "bytes": 862,
+      "sha256": "19be171481dc71a0b2803ebcd01dd8b0c5fd5778dee34c0a3cabc948c225f24e"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png",
+      "bytes": 1674,
+      "sha256": "4209a49e44a92ec40a327d3455eb1b1c153ee83d75de1c2be0a12ab18b2ff9de"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png",
+      "bytes": 762,
+      "sha256": "836c918cb613249eba0483a6b02fa3df3c1c0a89a315ee4d3b88509b83c7ab73"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png",
+      "bytes": 1226,
+      "sha256": "41c7d42f6e61f8fe7f30b1ffa2256aecbc9682be06d18c4a3062043e1a2e547c"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png",
+      "bytes": 1418,
+      "sha256": "5d7e5bdf01b93802bc973345b3a78c038907147625035952a08a115a563b7f81"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json",
+      "bytes": 391,
+      "sha256": "ccc7950fd5f5b82067c85f667940a9d59189151460761ece8098ca78daa19469"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png",
+      "bytes": 68,
+      "sha256": "93ae7d494fad0fb30cbf3ae746a39c4bc7a0f8bbf87fbb587a3f3c01f3c5ce20"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png",
+      "bytes": 68,
+      "sha256": "93ae7d494fad0fb30cbf3ae746a39c4bc7a0f8bbf87fbb587a3f3c01f3c5ce20"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png",
+      "bytes": 68,
+      "sha256": "93ae7d494fad0fb30cbf3ae746a39c4bc7a0f8bbf87fbb587a3f3c01f3c5ce20"
+    },
+    {
+      "path": "ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
+      "bytes": 336,
+      "sha256": "a985b626c4f7546a8ba392d135e9226c3547c8e2b46895f5f2bdf40d7b14ef9f"
+    },
+    {
+      "path": "ios/Runner/Base.lproj/LaunchScreen.storyboard",
+      "bytes": 2377,
+      "sha256": "857e61203b3deafb05766d8fcda898b86a7cb6f3d5e385ecc9926c4d698215e9"
+    },
+    {
+      "path": "ios/Runner/Base.lproj/Main.storyboard",
+      "bytes": 1605,
+      "sha256": "fd367b6c43006d61b730f674970dd48b9f662c8f2264e52ffc1558102a2c9f2d"
+    },
+    {
+      "path": "ios/Runner/GeneratedPluginRegistrant.h",
+      "bytes": 378,
+      "sha256": "a5f88cc6415d2e639d2cb549348b84e02a7fdd0261603b0063abef6fa11f075a"
+    },
+    {
+      "path": "ios/Runner/GeneratedPluginRegistrant.m",
+      "bytes": 1179,
+      "sha256": "b46d540701821311a541309c51658bfb4afb90327be00e3bee63b8914073e360"
+    },
+    {
+      "path": "ios/Runner/Info.plist",
+      "bytes": 2674,
+      "sha256": "3ddd2497a0c3fcb409ccfd5ad3c1ff63b64f4b9145e119a730101f1403aa73be"
+    },
+    {
+      "path": "ios/Runner/Runner-Bridging-Header.h",
+      "bytes": 38,
+      "sha256": "1a8d11d01d1cc92c650c9c9ed35299240052d4683a15a719a2315ef44185e074"
+    },
+    {
+      "path": "ios/Runner/SceneDelegate.swift",
+      "bytes": 76,
+      "sha256": "add68b905971dedfcc0d0b5b7118030de5925ba8c081ad9815463699e3a444ad"
+    },
+    {
+      "path": "ios/RunnerTests/RunnerTests.swift",
+      "bytes": 285,
+      "sha256": "5e8f4908dacea6f29b2a790e4d38bf5fded69096063f9a27a2f21584d62b30c0"
+    },
+    {
+      "path": "lib/main.dart",
+      "bytes": 3743,
+      "sha256": "aa6b700b8c8a1b03c0ae7535e1f467742e87464d6b2c276f6df891ce1d717c07",
+      "types": [
+        "ShareBondhuApp",
+        "_ShareBondhuAppState"
+      ]
+    },
+    {
+      "path": "lib/models/offerwall_models.dart",
+      "bytes": 12641,
+      "sha256": "6a82724c3df364083d570fa95648866e56b5c1c87b62e3c30dcf6d19a6d4d8a5",
+      "types": [
+        "OfferwallFilter",
+        "OfferLoadState",
+        "RewardCreditState",
+        "OfferwallState",
+        "OfferRewardStatus",
+        "RewardAvailability",
+        "RewardPhase",
+        "RewardedAdEventType",
+        "RewardSession",
+        "RewardedAdEvent",
+        "RewardViewState",
+        "OfferLaunchGrant"
+      ]
+    },
+    {
+      "path": "lib/models/saved_transfer.dart",
+      "bytes": 6619,
+      "sha256": "7e3fe1a7e752d52d40b7611dafacaf33f46b77c3f22810a229311bd0b7bea3b4",
+      "types": [
+        "HistoryException",
+        "HistoryCancelled",
+        "HistoryCancellation",
+        "SavedFileStatus",
+        "SavedFile",
+        "SavedTransfer",
+        "HistorySnapshot",
+        "HistoryCheckProgress",
+        "HistoryShareFile"
+      ]
+    },
+    {
+      "path": "lib/models/share_coin_models.dart",
+      "bytes": 45401,
+      "sha256": "7283c6db9855d7e150b8b4e6dbd203db1bb0ea441557ab8d6a3e99d276613cca",
+      "types": [
+        "CoinModelException",
+        "CoinDirection",
+        "CoinSource",
+        "CoinTransactionStatus",
+        "RewardEventStatus",
+        "WithdrawalStatus",
+        "PayoutMethod",
+        "OfferStatus",
+        "OfferCategory",
+        "OfferPlatform",
+        "OfferSort",
+        "PromotionStatus",
+        "ShareCoinBalance",
+        "ShareCoinTransaction",
+        "RewardEvent",
+        "CoinConversionRate",
+        "PayoutMethodConfig",
+        "WithdrawalPolicy",
+        "WithdrawalIntent",
+        "WithdrawalRequest",
+        "AdConfiguration",
+        "Promotion",
+        "Offer",
+        "OfferQuery",
+        "PageInfo",
+        "CoinPage",
+        "OfferStart",
+        "DailyRewardConfiguration"
+      ]
+    },
+    {
+      "path": "lib/models/share_file.dart",
+      "bytes": 3224,
+      "sha256": "d07d8f9c0ca5456300e636031630e6754fe829cc32179b44305a56977d5938c4",
+      "types": [
+        "FileCategory",
+        "PickShareFiles",
+        "FileSelection",
+        "ShareFile"
+      ]
+    },
+    {
+      "path": "lib/models/transfer_activity.dart",
+      "bytes": 4778,
+      "sha256": "6d0c1d0fbbe80e0f093f35fe123e20c1629c8258b9432e4ad180686de002ffd6",
+      "types": [
+        "TransferRole",
+        "TransferActivity"
+      ]
+    },
+    {
+      "path": "lib/models/transfer_models.dart",
+      "bytes": 14837,
+      "sha256": "3e55dd6a062b98ce77dca1ee23ac9fd2fafd4065e0b6db5c48cda33e3245bdc8",
+      "types": [
+        "TransferLimits",
+        "TransferException",
+        "TransferCancelled",
+        "PairingCode",
+        "ReceiverSession",
+        "OfferedFile",
+        "IncomingOffer",
+        "TransferPhase",
+        "TransferProgress",
+        "ReceivedFile",
+        "TransferReceipt"
+      ]
+    },
+    {
+      "path": "lib/models/user_models.dart",
+      "bytes": 6417,
+      "sha256": "438c6c131619b95fd0c12603b3a98f3201ffd4afe8c321d163b92d3bbda67423",
+      "types": [
+        "AccountStatus",
+        "AuthenticationMethod",
+        "ReferralStatus",
+        "AccountScope",
+        "ShareCoinUser",
+        "ReferralSummary"
+      ]
+    },
+    {
+      "path": "lib/screens/history_screen.dart",
+      "bytes": 25890,
+      "sha256": "92586dc885a26d8e96c233f60f27d448828b6bdcf586ca513a33296f6481ed30",
+      "types": [
+        "HistoryShareAction",
+        "HistoryFilter",
+        "HistoryScreen",
+        "_HistoryScreenState",
+        "_HistoryNotice"
+      ]
+    },
+    {
+      "path": "lib/screens/home_screen.dart",
+      "bytes": 35567,
+      "sha256": "bdc1cce8667c2d14fad1e757c0f7d2dbac468ccd09f88056475c368d30170189",
+      "types": [
+        "HomeScreen",
+        "_HomeScreenState",
+        "_HeroPanel",
+        "_SurfacePanel",
+        "_Metric",
+        "_EmptySelection",
+        "_FileTile",
+        "_GuideStep",
+        "_InfoLine",
+        "_ErrorNotice",
+        "_SmallProgress"
+      ]
+    },
+    {
+      "path": "lib/screens/nearby_screen.dart",
+      "bytes": 40327,
+      "sha256": "37ac6f7c4cecd14210047781bd77478766df1c97912dbe6120fa57e55a918936",
+      "types": [
+        "NearbyMode",
+        "NearbyScreen",
+        "_NearbyScreenState",
+        "_NearbyPanel",
+        "_MessagePanel",
+        "_ProgressPanel",
+        "_BusyIcon"
+      ]
+    },
+    {
+      "path": "lib/screens/offerwall_screen.dart",
+      "bytes": 41105,
+      "sha256": "dcd56e47d736ce782c319ecf00c849d2cbc89ae2357660daf0911e1c92720cea",
+      "types": [
+        "OfferwallScreen",
+        "_OfferwallScreenState",
+        "_OfferCard",
+        "OfferThumbnail",
+        "_OfferThumbnailState",
+        "OfferDetailScreen",
+        "_OfferDetailScreenState",
+        "_OfferNotice"
+      ]
+    },
+    {
+      "path": "lib/screens/reward_center_screen.dart",
+      "bytes": 43571,
+      "sha256": "01bf6a76ccb9c37823e582372bfce0d8a57be08c091cfa94f8efe5b6eba9b115",
+      "types": [
+        "RewardedAdAdapter",
+        "UnavailableRewardedAdAdapter",
+        "RewardCoordinator",
+        "RewardCenterMode",
+        "RewardCenterScreen",
+        "_RewardCenterScreenState",
+        "_RewardNotice"
+      ]
+    },
+    {
+      "path": "lib/screens/scan_pairing_screen.dart",
+      "bytes": 20597,
+      "sha256": "4240d873e273fbdf5fc6208e13147d6b324208a4574d26c89386498df1cde3f3",
+      "types": [
+        "PairingCameraException",
+        "PairingCamera",
+        "MobilePairingCamera",
+        "ScanPairingScreen",
+        "_ScanPairingScreenState",
+        "_ScannerNote"
+      ]
+    },
+    {
+      "path": "lib/screens/share_coin_home_screen.dart",
+      "bytes": 41721,
+      "sha256": "16337da0eb2275255a42478aab4a4736608253bdf2a0eed2edc880fdb87be569",
+      "types": [
+        "ShareCoinFileAction",
+        "ShareCoinHomeScreen",
+        "_ShareCoinHomeScreenState",
+        "_CoinNotice",
+        "_WithdrawalDialog",
+        "_WithdrawalDialogState"
+      ]
+    },
+    {
+      "path": "lib/services/connectivity_service.dart",
+      "bytes": 7190,
+      "sha256": "779a13a1c5aef22bf81eb79927cc54542f7213ded0ca6cc4d1afc5add620b4c0",
+      "types": [
+        "InternetState",
+        "LocalNetworkState",
+        "CoinServiceState",
+        "ConnectivitySnapshot",
+        "ConnectivityService"
+      ]
+    },
+    {
+      "path": "lib/services/local_transfer_service.dart",
+      "bytes": 46521,
+      "sha256": "d91d9db644eb0582505afd053fbb0108905cd034eeda2c9238b1090169c4a55d",
+      "types": [
+        "TlsIdentity",
+        "_DigestOutput",
+        "_HttpFailure",
+        "_ReceivingBatch",
+        "LocalReceiver",
+        "LocalSender"
+      ]
+    },
+    {
+      "path": "lib/services/offerwall_service.dart",
+      "bytes": 27231,
+      "sha256": "6be9918ebbc7380a79787183b6456bc393ce2ae8a60f4521cdd79d97ea2cc906",
+      "types": [
+        "RewardLinkLauncher",
+        "OfferResourcePolicy",
+        "OfferThumbnailCache",
+        "OfferwallController",
+        "CoinFeedState",
+        "CoinFeedController"
+      ]
+    },
+    {
+      "path": "lib/services/share_coin_service.dart",
+      "bytes": 39301,
+      "sha256": "7082b9a6ca424a3e3c9545ee53722de89014bbbe4347d9b2819adab0b5404d84",
+      "types": [
+        "ShareCoinOperation",
+        "CoinErrorCode",
+        "CoinDataOrigin",
+        "ShareCoinException",
+        "CoinData",
+        "ShareCoinBackend",
+        "ShareCoinRewardOperation",
+        "ShareCoinRewardBackend",
+        "UnconfiguredShareCoinBackend",
+        "_CoinMutation",
+        "ShareCoinService"
+      ]
+    },
+    {
+      "path": "lib/services/transfer_history_service.dart",
+      "bytes": 16253,
+      "sha256": "53983d4612ecf3b261dc6026e97ac4d3dc23f5a5c99fd862de4472ff681f1250",
+      "types": [
+        "TransferHistoryService",
+        "_HistoryDigestOutput",
+        "_FileProblem"
+      ]
+    },
+    {
+      "path": "lib/services/transfer_progress_controller.dart",
+      "bytes": 14181,
+      "sha256": "6a4fe6262df532d8d5492db8feb89f9232d34f24a6c97976a10573c53d77d6ad",
+      "types": [
+        "TransferProgressController"
+      ]
+    },
+    {
+      "path": "lib/widgets/pairing_qr_card.dart",
+      "bytes": 4580,
+      "sha256": "8218601e6d3e8a039895956fc18adf247df6424a4d058ba1e30bbe8d6b801cf5",
+      "types": [
+        "PairingQrCard",
+        "_PairingQrCardState"
+      ]
+    },
+    {
+      "path": "lib/widgets/transfer_progress_panel.dart",
+      "bytes": 7659,
+      "sha256": "c51d90be0b9025dcd559b463457efe540f092c0ede834f4a49222d1b176e6862",
+      "types": [
+        "TransferProgressPanel"
+      ]
+    },
+    {
+      "path": "lib/widgets/transfer_result_panel.dart",
+      "bytes": 5570,
+      "sha256": "a811cea59cbd927c5c3326499973458ac40d16123f4d59492e5cea9c8bd06376",
+      "types": [
+        "TransferResultPanel"
+      ]
+    },
+    {
+      "path": "pubspec.lock",
+      "bytes": 20781,
+      "sha256": "eb4a97ed8547c242b88c9adf4642501fc6b637b02c94148c4ae7c6c8a88d541b"
+    },
+    {
+      "path": "pubspec.yaml",
+      "bytes": 525,
+      "sha256": "9329f50e61f6cd49277898ccc88140b361e1e8aeb491b5fa163a1319acf91325"
+    },
+    {
+      "path": "test/offerwall_rewards_test.dart",
+      "bytes": 48320,
+      "sha256": "637097943a76aa7bfb08c916389693e3d084d8023e74bca80b97e6e671eb273a",
+      "types": [
+        "OfferTestBackend",
+        "TestRewardedAd",
+        "OfferFixture"
+      ]
+    },
+    {
+      "path": "test/transfer_progress_test.dart",
+      "bytes": 84439,
+      "sha256": "e9030e9daecfb93c6b2ed8ee4ec8863009fbb62bdaa62f2f913a587d40d63107",
+      "types": [
+        "ProgressProbe",
+        "ControlledSender",
+        "TestShareCoinBackend",
+        "CoinServiceFixture"
+      ]
+    },
+    {
+      "path": "test/widget_test.dart",
+      "bytes": 90921,
+      "sha256": "b0cc24d409479886ca1edc88c6883aeeb82c0f30860cb60c42e387cb9d659efa",
+      "types": [
+        "ReceiverFixture",
+        "HistoryDiskFixture",
+        "FakeHistoryService",
+        "FakePairingCamera"
+      ]
+    }
+  ]
+}

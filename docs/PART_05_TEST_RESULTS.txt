@@ -1,0 +1,224 @@
+ShareBondhu Part 5 verification — 2026-09-08
+Authoritative baseline: ShareBondhu_Part_04.zip, 0.4.0+4, 143 previously passing tests.
+Current version: 0.5.0+5. Toolchain: Flutter 3.47.2 / Dart 3.13.2, Linux.
+New tests: 61. Verified total: 204 passed.
+No existing test removed. Original File 20 bodies retained exactly; new imports/registration/tests appended.
+Reward/account/provider data in tests comes from TestShareCoinBackend, not a production integration.
+No actual authentication/ad/attribution/payout/native build/device/store verification was performed.
+
+COMMAND: flutter analyze --no-pub
+Analyzing sharebondhu...                                        
+No issues found! (ran in 4.7s)
+
+COMMAND: flutter test --no-pub --reporter expanded
+00:00 +0: loading /home/user/sharebondhu/test/transfer_progress_test.dart
+00:00 +0: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 01 wallet serialization preserves all server fields
+00:00 +1: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 02 wallet rejects negative non-integer and overflowing values
+00:00 +2: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 03 transaction round trip
+00:00 +3: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 04 direction produces signed display without negative stored amounts
+00:00 +4: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 05 every ledger status including rejected and reversed is preserved
+00:00 +5: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 06 unsafe transaction IDs and unknown statuses are rejected
+00:00 +6: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 07 reward claims cannot use withdrawal/admin sources or malformed timestamps
+00:00 +7: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 10 withdrawal JSON validates rational quote and masked destination
+00:00 +8: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 14 payout polling may skip forward but cannot reverse terminal states
+00:00 +9: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 15 user serialization contains no credential fields
+00:00 +10: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 16 only active accounts may request rewards
+00:00 +11: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 17 referral counts and earned coins are validated
+00:00 +12: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 18 offer model freezes arrays and keeps country/platform availability
+00:00 +13: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 19 completed offer needs a transaction reference and expiry uses supplied server time
+00:00 +14: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 20 pagination is scalable and rejects duplicate IDs or overfull pages
+00:00 +15: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 21 promotion expiry never implies coin credit
+00:00 +16: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 22 ad configuration starts disabled and validates SDK-free policy
+00:00 +17: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain 29 negative and overflow reward amounts cannot become claims
+00:00 +18: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain metadata whitelist refuses credentials and mutable nested values
+00:00 +19: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 immutable domain daily configuration uses a backend-provided seven-day policy
+00:00 +20: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service 08 duplicate reward submissions share one backend event
+00:00 +21: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service 09 repeated provider callback with new client IDs does not produce another reward
+00:00 +22: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service 11 minimum withdrawal is checked without a backend debit request
+00:00 +23: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service 12 insufficient funds does not locally subtract a balance
+00:00 +24: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service 13 withdrawal idempotency and conflicting requests are protected
+00:00 +25: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service 23 offline wallet is explicitly cached, never invented
+00:00 +26: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service 27 safe backend error mapping does not expose raw provider errors
+00:00 +27: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service 28 malformed or cross-account backend payloads are not wallet balances
+00:00 +28: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service 30 backend pending rewards never add local coins
+00:00 +29: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service client cannot submit an already-approved reward as evidence
+00:00 +30: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service unconfigured backend and missing account are honest unavailable states
+00:00 +31: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service restricted accounts cannot submit claims
+00:00 +32: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service offline reward claims are not queued as money or sent to backend
+00:00 +33: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service offer starts are idempotent and cannot become completed rewards
+00:00 +34: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service expired offers are rejected using backend response time
+00:00 +35: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service server policy blocks an already-active withdrawal
+00:00 +36: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service changed quote is not silently accepted
+00:00 +37: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service uncertain withdrawal keeps its key and prevents blind replay
+00:00 +38: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service malformed write confirmation is uncertain, not a refund or payout
+00:00 +39: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service account switch hides cached wallet and rejects late results
+00:00 +40: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service status and cache reads cannot invent local approval or transactions
+00:00 +41: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service pagination metadata must agree with the request size
+00:00 +42: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 server-authoritative service suspension before provider submission prevents a background mutation
+00:00 +43: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 late-response safeguards a pre-mutation wallet response cannot become a fresh post-mutation balance
+00:00 +44: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 late-response safeguards an account change during mutation notification cannot post for the old user
+00:00 +45: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 late-response safeguards uncertain withdrawal UI checks its original key without a second submission
+00:02 +46: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 connectivity 24 initial state does not assume internet or a backend
+00:02 +47: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 connectivity 25 local IPv4 and offline internet are independent
+00:02 +48: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 connectivity 26 disposal ignores late probes without publishing new state
+00:02 +49: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 connectivity simultaneous refreshes use one set of probes
+00:02 +50: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 connectivity suspended old checks cannot overwrite a newer resumed check
+00:02 +51: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 connectivity probe failure is limited/error, not a fabricated reachable service
+00:02 +52: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 connectivity a listener may dispose connectivity during publication
+00:02 +53: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 dashboard and navigation new local user sees setup and no invented zero balance
+00:02 +54: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 dashboard and navigation validated wallet and offline cache labels are distinct
+00:02 +55: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 dashboard and navigation file actions remain enabled while reward service is offline
+00:02 +56: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 dashboard and navigation dashboard handles small screens and enlarged text
+00:02 +57: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 dashboard and navigation disposal during wallet load does not update a dead dashboard
+00:03 +58: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 dashboard and navigation 31 existing home opens ShareCoin without losing selected files
+00:03 +59: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 dashboard and navigation 32 receiver and saved-history routes still use original screens
+00:04 +60: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 5 dashboard and navigation account changes remove previously displayed wallet values
+00:04 +61: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 01 initial idle state
+00:04 +62: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 02 connecting state
+00:04 +63: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 03 waiting for approval has no file bytes
+00:04 +64: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 04 approval is a distinct real-engine state
+00:04 +65: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 05 sending counters come from events
+00:04 +66: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 06 receiver uses the same progress abstraction
+00:04 +67: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 07 verifying is not completed
+00:04 +68: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 08 completion requires an engine-validated receipt boundary
+00:04 +69: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 09 definitive failure preserves real byte counts
+00:04 +70: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 10 requested cancellation is not prematurely terminal
+00:04 +71: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 11 zero-byte file uses staged-file completion without division by zero
+00:04 +72: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 12 single-file name index and byte totals
+00:04 +73: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 13 multiple files keep cumulative bytes and separate file bytes
+00:04 +74: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 14 exactly 100 percent bytes does not imply delivery
+00:04 +75: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 15 invalid over-range and negative counters are safely bounded
+00:04 +76: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 16 cancellation during transfer rejects duplicate cancel requests
+00:04 +77: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 17 a real completion receipt wins a cancellation race
+00:04 +78: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 18 commit ambiguity never guesses success or failure counts
+00:04 +79: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 19 safe retry requires settled uncommitted work and a new epoch
+00:04 +80: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 20 file-count progress cannot regress
+00:04 +81: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 21 byte-count progress cannot regress
+00:04 +82: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 22 speed is measured from monotonic elapsed time and actual bytes
+00:04 +83: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 23 ETA estimates only the remaining payload and expires on stalls
+00:04 +84: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 24 malformed verification receipts cannot confirm delivery
+00:04 +85: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 29 duplicate and stale progress frames are ignored
+00:04 +86: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller 30 inconsistent metadata indices totals and states do not corrupt progress
+00:04 +87: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller repeated wire IDs have distinct receiver attempt identities
+00:04 +88: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller public activity projection remains safe for malformed numerical inputs
+00:04 +89: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller clock rollback and estimator refresh never create bytes
+00:04 +90: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 controller disposed controller ignores queued progress receipts and cancellation
+00:04 +91: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 malformed-event regressions a rejected high sequence cannot poison later valid telemetry
+00:04 +92: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 malformed-event regressions current-file counters cannot go backwards while batch counters advance
+00:04 +93: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 malformed-event regressions malformed hash-check counts cannot invent matched checksums
+00:04 +94: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 real TLS progress (setUpAll)
+00:04 +94: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 real TLS progress 25 receiver completion uses existing saved history and receipt
+00:05 +95: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 real TLS progress 26 sender confirmation and counters use real TLS engine events
+00:05 +96: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 real TLS progress real approval denial reads no source and remains retryable only after settlement
+00:05 +97: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 real TLS progress real streamed cancellation keeps original content and records no saved success
+00:05 +98: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 real TLS progress real source failure has no false successful-file count
+00:05 +99: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 real TLS progress (tearDownAll)
+00:05 +99: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 widgets and lifecycle progress fits narrow screens with large system text
+00:05 +100: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 widgets and lifecycle 27 disposing progress widget detaches without owning the engine
+00:05 +101: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 widgets and lifecycle 28 backgrounding Nearby cancels its real sender interface
+00:05 +102: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 widgets and lifecycle disposing Nearby cancels work and ignores late callbacks
+00:05 +103: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 widgets and lifecycle a confirmed sender result retains the existing delivery receipt UI
+00:06 +104: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 widgets and lifecycle receiver result opens the existing HistoryScreen instead of a second database
+00:06 +105: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 widgets and lifecycle safe retry is explicit and does not discard selected originals
+00:06 +106: /home/user/sharebondhu/test/transfer_progress_test.dart: Part 4 widgets and lifecycle uncertain result never offers automatic retry or invented counts
+00:06 +107: loading /home/user/sharebondhu/test/widget_test.dart
+00:07 +107: /home/user/sharebondhu/test/widget_test.dart: File model formats bytes with binary units
+00:07 +108: /home/user/sharebondhu/test/widget_test.dart: File model rejects negative byte counts
+00:07 +109: /home/user/sharebondhu/test/widget_test.dart: File model classifies file extensions without case sensitivity
+00:07 +110: /home/user/sharebondhu/test/widget_test.dart: File model handles dotfiles and names without extensions
+00:07 +111: /home/user/sharebondhu/test/widget_test.dart: File model keeps source identity separate from the display name
+00:07 +112: /home/user/sharebondhu/test/widget_test.dart: File model does not read file content until a stream is requested
+00:07 +113: /home/user/sharebondhu/test/widget_test.dart: File model validates filenames and URI schemes
+00:07 +114: /home/user/sharebondhu/test/widget_test.dart: File model freezes selection results and validates unavailable counts
+00:07 +115: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface starts with the brand and an empty selection
+00:08 +116: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface selects several files and calculates the total
+00:08 +117: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface skips duplicate source references in one selection
+00:09 +118: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface skips duplicate source references across picker calls
+00:09 +119: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface keeps files that share a name but have different sources
+00:09 +120: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface preserves the selection when the picker is canceled
+00:09 +121: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface removes a reference without reading its original file
+00:09 +122: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface asks before clearing and respects both dialog choices
+00:10 +123: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface shows unavailable-file feedback without losing valid files
+00:10 +124: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface reports an entirely unavailable selection
+00:10 +125: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface shows access errors and permits a successful retry
+00:10 +126: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface reports missing native plugins with rebuild instructions
+00:10 +127: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface handles an unexpected picker error without crashing
+00:10 +128: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface prevents repeated picker calls while selection is pending
+00:11 +129: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface changes themes without losing the current selection
+00:11 +130: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface keeps the selection when switching navigation tabs
+00:11 +131: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface handles large metadata without reading the file into memory
+00:12 +132: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface renders narrow screens without layout errors
+00:12 +133: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface supports large system text on a narrow screen
+00:12 +134: /home/user/sharebondhu/test/widget_test.dart: Part 1 user interface ignores late picker results after the screen is disposed
+00:12 +135: /home/user/sharebondhu/test/widget_test.dart: Part 2 protocol models pairing code round trips without exposing secrets in toString
+00:12 +136: /home/user/sharebondhu/test/widget_test.dart: Part 2 protocol models pairing rejects malformed, public, DNS and normal-app loopback targets
+00:12 +137: /home/user/sharebondhu/test/widget_test.dart: Part 2 protocol models filenames cannot create paths or hide direction-control characters
+00:12 +138: /home/user/sharebondhu/test/widget_test.dart: Part 2 protocol models offer bounds reject empty, oversized and duplicate-id batches
+00:12 +139: /home/user/sharebondhu/test/widget_test.dart: Part 2 protocol models wire metadata and receipts never serialize local source paths
+00:12 +140: /home/user/sharebondhu/test/widget_test.dart: Part 2 protocol models bounded JSON rejects large messages, arrays and incomplete input
+00:12 +141: /home/user/sharebondhu/test/widget_test.dart: Part 2 protocol models an invalid checksum cannot be parsed as a receipt
+00:12 +142: /home/user/sharebondhu/test/widget_test.dart: Part 2 protocol models all byte progress can still be awaiting verification
+00:12 +143: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers (setUpAll)
+00:12 +143: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers streams multiple files, verifies hashes and preserves duplicate names
+00:13 +144: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers decline reads no content and writes no staging files
+00:13 +145: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers wrong pairing token never reaches receiver approval
+00:13 +146: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers wrong TLS fingerprint is rejected and the listener stays usable
+00:13 +147: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers approval timeout defaults to rejection
+00:13 +148: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers an expired invitation closes the receiver
+00:13 +149: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers truncated source data cannot be committed
+00:13 +150: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers extra source bytes cannot exceed the approved size
+00:13 +151: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers a later source read failure rolls back the entire uncommitted batch
+00:13 +152: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers sender cancellation interrupts a real upload and cleans staging
+00:13 +153: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers stopping the receiver during upload does not leave uncommitted files
+00:13 +154: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers a second offer cannot bypass a pending approval
+00:13 +155: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers wrong commit checksums discard all staged files
+00:13 +156: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers path-like filenames stay inside the receiver-owned directory
+00:13 +157: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers browser-origin requests and unknown endpoints are refused
+00:13 +158: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers approved but abandoned batches expire and clean staging
+00:14 +159: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers the first-upload idle deadline also cleans an approved batch
+00:14 +160: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers the server enforces the file-count limit before approval
+00:14 +161: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers a completed receipt can be recovered with its upload token only
+00:14 +162: /home/user/sharebondhu/test/widget_test.dart: Part 2 real loopback TLS transfers (tearDownAll)
+00:14 +162: /home/user/sharebondhu/test/widget_test.dart: Part 2 navigation backgrounding during storage lookup never starts a receiver
+00:14 +163: /home/user/sharebondhu/test/widget_test.dart: Part 2 navigation receive screen is opt-in and returning preserves selection
+00:14 +164: /home/user/sharebondhu/test/widget_test.dart: Part 2 navigation send screen opens without reading source bytes
+00:15 +165: /home/user/sharebondhu/test/widget_test.dart: Part 2 navigation invalid pairing code is rejected before networking
+00:15 +166: /home/user/sharebondhu/test/widget_test.dart: Part 2 navigation nearby sender layout supports narrow large-text screens
+00:15 +167: /home/user/sharebondhu/test/widget_test.dart: Part 3 saved receipt models strict receipts reject traversal, duplicate IDs and non-UTC timestamps
+00:15 +168: /home/user/sharebondhu/test/widget_test.dart: Part 3 saved receipt models history identity and status do not imply current checksum verification
+00:15 +169: /home/user/sharebondhu/test/widget_test.dart: Part 3 saved receipt models history cancellation notifies once and supports listener removal
+00:15 +170: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage missing history is empty and does not create the received directory
+00:15 +171: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage loads legacy v1 receipts and streams checks without rewriting anything
+00:15 +172: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage repeated wire IDs and duplicate names keep separate saved identities
+00:15 +173: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage missing and different-size copies are visible without a false verified state
+00:15 +174: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage same-size content changes fail checksum verification and export preparation
+00:15 +175: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage an individual intact copy can be shared when another file is missing
+00:16 +176: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage serialized localPath fields are never used to find shared files
+00:16 +177: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage corrupt and oversized manifests are skipped without deletion
+00:16 +178: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage staging and unrelated directories are ignored
+00:16 +179: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage file symlinks are blocked even if their target matches the checksum
+00:16 +180: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage symlinked receipts, batch directories and storage roots are refused
+00:16 +181: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage receipt edits after listing require a refresh before verification or sharing
+00:16 +182: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage canceling a streamed verification leaves files and receipts unchanged
+00:16 +183: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage scan limits are disclosed and never remove other batches
+00:16 +184: /home/user/sharebondhu/test/widget_test.dart: Part 3 real saved-file storage unchanged Part 2 TLS output can be loaded and verified by Part 3
+00:16 +185: /home/user/sharebondhu/test/widget_test.dart: Part 3 QR display active QR uses a white quiet zone and a real QR widget
+00:16 +186: /home/user/sharebondhu/test/widget_test.dart: Part 3 QR display QR is removed at expiry and a new invitation can be shown
+00:16 +187: /home/user/sharebondhu/test/widget_test.dart: Part 3 QR display QR remains readable-sized on a narrow large-text screen
+00:16 +188: /home/user/sharebondhu/test/widget_test.dart: Part 3 camera and QR flow visiting the scanner does not start the camera
+00:16 +189: /home/user/sharebondhu/test/widget_test.dart: Part 3 camera and QR flow a valid capture waits for explicit confirmation and ignores duplicates
+00:16 +190: /home/user/sharebondhu/test/widget_test.dart: Part 3 camera and QR flow arbitrary URLs and malformed payloads are ignored without showing their content
+00:16 +191: /home/user/sharebondhu/test/widget_test.dart: Part 3 camera and QR flow permission failure keeps the manual fallback usable
+00:17 +192: /home/user/sharebondhu/test/widget_test.dart: Part 3 camera and QR flow backgrounding during camera startup stops a late permission result
+00:17 +193: /home/user/sharebondhu/test/widget_test.dart: Part 3 camera and QR flow disposing during startup ignores late results and releases the camera
+00:17 +194: /home/user/sharebondhu/test/widget_test.dart: Part 3 camera and QR flow scan again restarts capture and flashlight remains explicit
+00:17 +195: /home/user/sharebondhu/test/widget_test.dart: Part 3 camera and QR flow QR selection fills the sender field without reading or sending files
+00:17 +196: /home/user/sharebondhu/test/widget_test.dart: Part 3 camera and QR flow canceling the QR route preserves an already-entered manual code
+00:17 +197: /home/user/sharebondhu/test/widget_test.dart: Part 3 history interface empty history has no invented transfer rows
+00:18 +198: /home/user/sharebondhu/test/widget_test.dart: Part 3 history interface local search and issue filtering select the matching batches
+00:18 +199: /home/user/sharebondhu/test/widget_test.dart: Part 3 history interface verification is explicit and then updates the checked status
+00:18 +200: /home/user/sharebondhu/test/widget_test.dart: Part 3 history interface history share checks copies first and does not claim the destination saved them
+00:18 +201: /home/user/sharebondhu/test/widget_test.dart: Part 3 history interface canceling preparation prevents a native share action
+00:19 +202: /home/user/sharebondhu/test/widget_test.dart: Part 3 history interface a history screen ignores a load completed after disposal
+00:19 +203: /home/user/sharebondhu/test/widget_test.dart: Part 3 history interface home can open saved files and return without losing the selection
+00:19 +204: All tests passed!

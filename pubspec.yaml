@@ -1,0 +1,29 @@
+name: sharebondhu
+description: "ShareBondhu - nearby file sharing, built step by step."
+publish_to: "none"
+version: 0.7.0+7
+
+environment:
+  sdk: ">=3.13.0 <4.0.0"
+  flutter: ">=3.47.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  file_picker: 12.2.0
+  basic_utils: 5.8.2
+  crypto: 3.0.7
+  path_provider: 2.1.6
+  share_plus: 13.3.0
+  qr_flutter: 4.1.0
+  mobile_scanner: 7.4.0
+  path: 1.9.1
+  url_launcher: 6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: 6.0.0
+
+flutter:
+  uses-material-design: true

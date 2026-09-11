@@ -1,0 +1,79 @@
+ShareBondhu Part 2 verification
+Date: 2026-09-06
+Toolchain: Flutter 3.47.2 stable / Dart 3.13.2, Linux
+Unit/widget/network tests: 60 passed
+Breakdown: 28 retained baseline + 8 protocol models + 19 loopback TLS network + 5 new UI/lifecycle
+Native Android/iOS compilation: not performed
+Two-phone LAN/hotspot, native picker, permission prompts and share sheet: not verified
+Loopback tests use real sockets, TLS, streamed bytes and actual temporary disk files.
+UI screenshots use the Flutter test renderer and sample metadata, not a physical phone.
+
+STATIC ANALYSIS
+Analyzing sharebondhu...                                        
+No issues found! (ran in 10.9s)
+
+AUTOMATED TEST OUTPUT
+00:00 +0: loading /home/user/sharebondhu/test/widget_test.dart
+00:00 +0: File model formats bytes with binary units
+00:00 +1: File model rejects negative byte counts
+00:00 +2: File model classifies file extensions without case sensitivity
+00:00 +3: File model handles dotfiles and names without extensions
+00:00 +4: File model keeps source identity separate from the display name
+00:00 +5: File model does not read file content until a stream is requested
+00:00 +6: File model validates filenames and URI schemes
+00:00 +7: File model freezes selection results and validates unavailable counts
+00:00 +8: Part 1 user interface starts with the brand and an empty selection
+00:00 +9: Part 1 user interface selects several files and calculates the total
+00:01 +10: Part 1 user interface skips duplicate source references in one selection
+00:01 +11: Part 1 user interface skips duplicate source references across picker calls
+00:01 +12: Part 1 user interface keeps files that share a name but have different sources
+00:01 +13: Part 1 user interface preserves the selection when the picker is canceled
+00:01 +14: Part 1 user interface removes a reference without reading its original file
+00:01 +15: Part 1 user interface asks before clearing and respects both dialog choices
+00:02 +16: Part 1 user interface shows unavailable-file feedback without losing valid files
+00:02 +17: Part 1 user interface reports an entirely unavailable selection
+00:02 +18: Part 1 user interface shows access errors and permits a successful retry
+00:02 +19: Part 1 user interface reports missing native plugins with rebuild instructions
+00:02 +20: Part 1 user interface handles an unexpected picker error without crashing
+00:02 +21: Part 1 user interface prevents repeated picker calls while selection is pending
+00:02 +22: Part 1 user interface changes themes without losing the current selection
+00:03 +23: Part 1 user interface keeps the selection when switching navigation tabs
+00:03 +24: Part 1 user interface handles large metadata without reading the file into memory
+00:03 +25: Part 1 user interface renders narrow screens without layout errors
+00:03 +26: Part 1 user interface supports large system text on a narrow screen
+00:03 +27: Part 1 user interface ignores late picker results after the screen is disposed
+00:03 +28: Part 2 protocol models pairing code round trips without exposing secrets in toString
+00:03 +29: Part 2 protocol models pairing rejects malformed, public, DNS and normal-app loopback targets
+00:03 +30: Part 2 protocol models filenames cannot create paths or hide direction-control characters
+00:03 +31: Part 2 protocol models offer bounds reject empty, oversized and duplicate-id batches
+00:03 +32: Part 2 protocol models wire metadata and receipts never serialize local source paths
+00:03 +33: Part 2 protocol models bounded JSON rejects large messages, arrays and incomplete input
+00:03 +34: Part 2 protocol models an invalid checksum cannot be parsed as a receipt
+00:03 +35: Part 2 protocol models all byte progress can still be awaiting verification
+00:03 +36: Part 2 real loopback TLS transfers (setUpAll)
+00:04 +36: Part 2 real loopback TLS transfers streams multiple files, verifies hashes and preserves duplicate names
+00:04 +37: Part 2 real loopback TLS transfers decline reads no content and writes no staging files
+00:04 +38: Part 2 real loopback TLS transfers wrong pairing token never reaches receiver approval
+00:04 +39: Part 2 real loopback TLS transfers wrong TLS fingerprint is rejected and the listener stays usable
+00:04 +40: Part 2 real loopback TLS transfers approval timeout defaults to rejection
+00:04 +41: Part 2 real loopback TLS transfers an expired invitation closes the receiver
+00:04 +42: Part 2 real loopback TLS transfers truncated source data cannot be committed
+00:04 +43: Part 2 real loopback TLS transfers extra source bytes cannot exceed the approved size
+00:04 +44: Part 2 real loopback TLS transfers a later source read failure rolls back the entire uncommitted batch
+00:04 +45: Part 2 real loopback TLS transfers sender cancellation interrupts a real upload and cleans staging
+00:04 +46: Part 2 real loopback TLS transfers stopping the receiver during upload does not leave uncommitted files
+00:04 +47: Part 2 real loopback TLS transfers a second offer cannot bypass a pending approval
+00:04 +48: Part 2 real loopback TLS transfers wrong commit checksums discard all staged files
+00:04 +49: Part 2 real loopback TLS transfers path-like filenames stay inside the receiver-owned directory
+00:04 +50: Part 2 real loopback TLS transfers browser-origin requests and unknown endpoints are refused
+00:04 +51: Part 2 real loopback TLS transfers approved but abandoned batches expire and clean staging
+00:04 +52: Part 2 real loopback TLS transfers the first-upload idle deadline also cleans an approved batch
+00:05 +53: Part 2 real loopback TLS transfers the server enforces the file-count limit before approval
+00:05 +54: Part 2 real loopback TLS transfers a completed receipt can be recovered with its upload token only
+00:05 +55: Part 2 real loopback TLS transfers (tearDownAll)
+00:05 +55: Part 2 navigation backgrounding during storage lookup never starts a receiver
+00:05 +56: Part 2 navigation receive screen is opt-in and returning preserves selection
+00:05 +57: Part 2 navigation send screen opens without reading source bytes
+00:05 +58: Part 2 navigation invalid pairing code is rejected before networking
+00:05 +59: Part 2 navigation nearby sender layout supports narrow large-text screens
+00:06 +60: All tests passed!
